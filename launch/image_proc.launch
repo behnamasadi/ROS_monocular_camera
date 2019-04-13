@@ -1,0 +1,16 @@
+<!-- http://wiki.ros.org/image_proc -->
+<launch>
+<arg name="name_space" default="usb_cam" />
+<!-- this line is for: ROS_NAMESPACE=usb_cam rosrun image_proc image_proc -->
+<node name="image_proc" pkg="image_proc" type="image_proc" ns="$(arg name_space)"/>
+
+
+<!-- this line is for: rosrun image_view image_view image:=usb_cam/image_rect_color -->
+<node name="image_rect_color" pkg="image_view" type="image_view" 	>
+	<remap from="image" to="$(arg name_space)/image_rect_color" />
+</node>
+
+<node name="image_raw" pkg="image_view" type="image_view" 	>
+	<remap from="image" to="$(arg name_space)/image_raw" />
+</node>
+</launch>
