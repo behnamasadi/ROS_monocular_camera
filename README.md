@@ -124,7 +124,10 @@ save it under image_proc.launch. Now run it:
 ```
 roslaunch image_proc.launch
 ```
-
+References: [1](http://ros-developer.com/2018/10/23/camera-calibration-based-on-zhangs-algorithm-chess-board-explained/)
+[2](http://ros-developer.com/2018/10/22/camera-calibration-based-on-direct-linear-transform-explained/)
+[3](http://ros-developer.com/2017/05/16/how-to-use-a-calibrated-camera-in-ros/) 
+[4](http://ros-developer.com/2017/04/23/camera-calibration-with-ros/) 
 
 ![alt text](https://img.shields.io/badge/license-BSD-blue.svg)
 
